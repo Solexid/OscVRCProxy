@@ -27,7 +27,7 @@ namespace OscVRCProxy
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Config recreated, cause file not found or not correct.");
                 Instance=new ServiceConfig();
-                File.WriteAllText("config.json",JsonSerializer.Serialize(Instance));
+                File.WriteAllText("config.json",JsonSerializer.Serialize(Instance, new JsonSerializerOptions { WriteIndented = true }));
 
 
             }

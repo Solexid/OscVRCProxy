@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OscVRCProxy;
 
-Console.WriteLine("LoadingConfig...");
+Console.WriteLine("Loading config file...");
 
 var OSCService = new OSCService();
 OSCService.StartReceive();
